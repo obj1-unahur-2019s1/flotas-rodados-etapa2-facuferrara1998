@@ -20,7 +20,7 @@ describe "Flota de rodados" {
 		deportes.agregarAFlota(
 			new AutoEspecial(capacidad = 5, velocidadMaxima = 160, 
 				peso = 1200, color = "beige")
-		)
+		)    // le pasas una nueva instancia es como una variable pero instanciando
 	
 		assert.equals(6450, deportes.pesoTotalFlota())	
 		assert.equals(true, deportes.estaBienEquipada())
@@ -30,14 +30,4 @@ describe "Flota de rodados" {
 		assert.equals(25, deportes.capacidadFaltante())	
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
